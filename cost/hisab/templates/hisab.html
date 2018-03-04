@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<table class="table  table-striped">
+<thead>
+<tr>
+    <th>Purpose</th>
+    <th></th>
+    <th></th>
+    <th>Amount</th>
+    <th></th>
+    <th>Date</th>
+</tr>
+</thead>
+<tbody>
+{% for expense in expenses %}
+<tr>
+    <td>{{ expense.purpose }}</td>
+    <td></td>
+    <td></td>
+    <td>{{ expense.taka }}</td>
+    <td></td>
+    <td>{{ expense.date }}</td>
+</tr>
+
+
+{% endfor %}
+</tbody>
+</table>
+
+</body>
+</html>
